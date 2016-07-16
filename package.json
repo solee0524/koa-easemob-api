@@ -1,0 +1,40 @@
+{
+  "name": "koa-easemob-api",
+  "version": "1.0.0",
+  "description": "Visit easemob api with koa generator function",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --harmony --require co-mocha test.js",
+    "coverage": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec --require co-mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solee0524/koa-easemob-api.git"
+  },
+  "keywords": [
+    "koa",
+    "generator",
+    "easemob"
+  ],
+  "author": "solee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solee0524/koa-easemob-api/issues"
+  },
+  "homepage": "https://github.com/solee0524/koa-easemob-api#readme",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "co-redis": "^2.1.1",
+    "koa-request": "^1.0.0",
+    "lodash": "^4.13.1",
+    "redis": "^2.6.2",
+    "tv4": "^1.2.7"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "co-mocha": "^1.1.2",
+    "coveralls": "^2.11.11",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3"
+  }
+}
