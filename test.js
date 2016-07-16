@@ -37,10 +37,10 @@ describe("Check input options with get access token", function () {
     em.should.have.property('message').have.string('Missing required property');
   });
 
-  it ("should return fail message with wrong info options", function * () {
-    var em = easemob(wrongInfoOptions);
-    var resp = yield em.getToken();
-    resp.should.have.property('code').equal(1);
-    resp.should.have.property('data').have.property('error').equal('organization_application_not_found');
-  });
+  // it ("should return fail message with wrong info options", function * () {
+  //   var em = easemob(wrongInfoOptions);
+  //   var resp = yield em.getToken();
+  //   resp.should.have.property('code').equal(1);
+  //   resp.should.have.property('data').have.property('error').equal('organization_application_not_found');
+  // });
 });
