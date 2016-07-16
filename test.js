@@ -41,8 +41,7 @@ describe("Check input options with get access token", function () {
   it ("should return fail message with wrong info options", function * () {
     var em = easemob(wrongInfoOptions);
     var resp = yield em.getToken();
-    // console.log(resp);
-    // resp.should.have.property('code').equal(1);
-    // resp.should.have.property('data').have.property('error').equal('organization_application_not_found');
+    resp.should.have.property('code').equal(1);
+    resp.should.have.property('data').have.property('error').equal('organization_application_not_found');
   });
 });
