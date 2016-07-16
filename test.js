@@ -4,7 +4,6 @@
 'use strict';
 
 var easemob = require('./index');
-var co = require('co');
 var should = require('chai').should();
 
 require('co-mocha');
