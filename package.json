@@ -1,6 +1,6 @@
 {
   "name": "koa-easemob-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Visit easemob api with koa generator function",
   "main": "index.js",
   "scripts": {

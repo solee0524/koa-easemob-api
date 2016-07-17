@@ -67,7 +67,7 @@ resp = yield em.modifyNickname('username', 'nickname');
 
 ```
 
-`**auth**`为可选输入参数, 根据您的redis-server是否设置密码再填写.
+**`auth`**为可选输入参数, 根据您的redis-server是否设置密码再填写.
 
 代码会在调用以上方法的时候,使用`em.getToken()`方法获取环信的token.
 
