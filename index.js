@@ -33,7 +33,7 @@ function Easemob(opt) {
   // assert(validInfo.valid, validInfo.error);
   if(!validInfo.valid) {
     let fail = _.clone(FAIL);
-    fail.message = validInfo.error.message;
+    fail.message = validInfo.error.message + validInfo.error.dataPath;
     return fail;
   }
 
